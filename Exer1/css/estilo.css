@@ -1,0 +1,54 @@
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.galeria{
+    width: 750px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.espaço {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.foto {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.foto:hover {
+    box-shadow: 1px 1px 25px black;
+}
+
+.foto:active {
+    transform: rotateY(180deg);
+}
+
+.foto .lado {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.foto .oposto {
+    background: #eaeaed;
+    color: #8f8f8f;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
