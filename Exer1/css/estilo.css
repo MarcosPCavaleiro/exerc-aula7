@@ -32,7 +32,7 @@ img {
     box-shadow: 1px 1px 25px black;
 }
 
-.foto:active {
+.foto:focus {
     transform: rotateY(180deg);
 }
 
